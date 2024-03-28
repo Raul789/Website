@@ -25,13 +25,48 @@ header{
     text-align: center;
 }
 
+/* Stiluri pentru butoane */
+.user-icon, .cart-icon {
+    border: 2px solid #000; /* Stilizează conturul butoanelor */
+    border-radius: 50%; /* Asigură forma circulară a butoanelor */
+    background-color: transparent; /* Face fundalul butoanelor transparent */
+    padding: 10px; /* Asigură un spațiu adecvat între iconiță și marginea butonului */
+    margin-left: 10px; /* Asigură un spațiu între butoane și alte elemente din header */
+    cursor: pointer; /* Schimbă cursorul la o mână pentru a indica că butonul este interactiv */
+}
+
+/* Stiluri pentru iconițe */
+.user-icon i, .cart-icon i {
+    font-size: 20px; /* Stilizează dimensiunea iconițelor */
+}
+
+/* Stiluri la hover */
+.user-icon:hover, .cart-icon:hover {
+    background-color: #000; /* Schimbă culoarea fundalului la hover */
+    color: #fff; /* Schimbă culoarea iconițelor la hover */
+}
+
+
 .logo {
     width: 350px; 
 }
 
-.logomini {
-    width: 150px; 
+.footer-left {
+    display: flex; /* Utilizează flexbox pentru a alinia imaginile într-un container flexibil */
+    align-items: center; /* Aliniază imaginile pe axa verticală (în cazul în care au înălțimi diferite) */
 }
+
+.logomini, .colab {
+    height: auto; /* Asigură-te că înălțimile imaginilor se ajustează automat pentru a păstra proporțiile */
+    width: auto; /* Asigură-te că lățimile imaginilor se ajustează automat pentru a păstra proporțiile */
+    max-height: 110px; /* Setează o înălțime maximă pentru imaginile tale pentru a controla dimensiunea lor */
+    margin-right: 20px; /* Adaugă un spațiu între imaginile pentru a le separa */
+}
+
+.visa{
+    width: 120px; 
+}
+
 
 
 .nav_links{

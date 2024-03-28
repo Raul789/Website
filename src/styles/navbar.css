@@ -21,13 +21,18 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 15px 5%;
     text-align: center;
 }
 
-.logo{
-    cursor: pointer;
+.logo {
+    width: 350px; 
 }
+
+.logomini {
+    width: 150px; 
+}
+
 
 .nav_links{
     text-align: center;

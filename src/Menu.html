@@ -6,27 +6,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-        <header>
-            <img class = "logo" src="/Users/macbook/Desktop/SEM2/Web/Website/Website/images/Rectangle.jpeg" alt = "logo" >
-            <nav>
-                <ul class="nav_links">
-                    <li> <a href="index.html">Home </a></li>
-                    <li> <a href="Products.html">Products </a></li>
-                    <li> <a href="Contacts.html">Contact</a></li>
-                    <li> <a href="AboutUs.html">About</a></li>
-                </ul>
-            </nav>
-            <a class="cta" href="Login.html">
-                <!-- Butonul cu persoana -->
-                <button class="user-icon"><i class="fa fa-user"></i></button>
-            </a>
-            <a class="cta" href="Cart.html">
-                <!-- Butonul cu coșul de cumpărături -->
-                <button class="cart-icon"><i class="fa fa-shopping-cart"></i></button>
-            </a>
-        </header>
+    <header>
+        <img class="logo" src="/Users/macbook/Desktop/SEM2/Web/Website/Website/images/Rectangle.jpeg" alt="logo">
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-bars fa-bars-icon"></i> Categorii</button>
+            <div class="dropdown-content">
+                <a href="#">LICENTA WINDOWS</a>
+                <a href="#">LICENTA OFFICE</a>
+                <a href="#">LICENTA ADOBE</a>
+                <a href="#">LICENTA SERVER</a>
+                <a href="#">LICENTA SQL SERVER</a>
+                <a href="#">LICENTA ANTIVIRUS</a>
+                <a href="#">ALTE LICENTE</a>
+            </div>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="  CAUTĂ PRODUSE..." name="search" class="search-field">
+            <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+        </div>
+        <nav class="nav_links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Contacts.html">Contact</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="Login.html">
+            <button class="user-icon"><i class="fa fa-user"></i></button>
+        </a>
+        <a class="cta" href="Cart.html">
+            <button class="cart-icon"><i class="fa fa-shopping-cart"></i></button>
+        </a>
+    </header>
+    
+    
         <footer class="footer-distributed">
             <div class="footer-left">
                 <img class = "logomini" src="/Users/macbook/Desktop/SEM2/Web/Website/Website/images/Square.png" alt = "logomini" >
@@ -64,5 +82,24 @@
             </div>
         </div>
         </footer>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var dropdown = document.querySelector(".dropdown");
+        var dropdownContent = document.querySelector(".dropdown-content");
+
+        // Ascultă evenimentul de clic pe butonul dropdown
+        dropdown.addEventListener("click", function() {
+            dropdownContent.classList.toggle("show");
+        });
+
+        // Ascultă evenimentul de clic în afara dropdown-ului pentru a ascunde dropdown-ul
+        window.addEventListener("click", function(event) {
+            if (!dropdown.contains(event.target)) {
+                dropdownContent.classList.remove("show");
+            }
+        });
+    });
+
+        </script>
     </body>
 </html>

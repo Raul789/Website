@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'Hanley Pro Sans White Extra';
+    src: url('../fonts/HanleyProSansWhiteExtra.ttf') format('truetype');
+    /* Poți adăuga alte formate de fonturi aici, cum ar fi woff, woff2, etc. */
+}

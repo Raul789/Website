@@ -6,144 +6,97 @@
     src: url('camin_catre_font/HanleyProSansWhiteExtra.ttf') format('truetype');
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #24252A;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Hanley Pro Sans White Extra', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
-
 
 li, a, button{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #edf0f1;
+    color: #2c2c2c;
     text-decoration: none;
 }
 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 5%;
-    text-align: center;
-}
-
-.header {
-    display: flex;
-    flex-direction: column; /* Așază elementele vertical */
-    align-items: center; /* Aliniază elementele pe axa orizontală */
-    padding: 20px;
-    background-color: #24252A;
-}
-
-/* Stiluri pentru butoane */
-.user-icon, .cart-icon {
-    border: 2px solid #fff; 
-    border-radius: 100%; 
-    background-color: transparent; 
-    padding: 10px; 
-    margin-left: 0px; 
-    margin-right: 30px;
-    cursor: pointer; 
-}
-
-/* Stiluri pentru iconițe */
-.user-icon, .cart-icon {
-    margin-left: 10px; /* Adaugă un spațiu între butoane și textul din meniu */
-    margin-right: 0px; /* Adaugă un spațiu între butoane și textul din meniu */
-}
-
-/* Stiluri la hover */
-.user-icon:hover, .cart-icon:hover {
-    background-color: #000; /* Schimbă culoarea fundalului la hover */
-    color: #6597D6; /* Schimbă culoarea iconițelor la hover */
-}
-
-
-.logo {
-    width: 350px; 
-}
-
-.footer-left {
-    display: flex; /* Utilizează flexbox pentru a alinia imaginile într-un container flexibil */
-    align-items: center; /* Aliniază imaginile pe axa verticală (în cazul în care au înălțimi diferite) */
-}
-
-.logomini, .colab {
-    height: auto; /* Asigură-te că înălțimile imaginilor se ajustează automat pentru a păstra proporțiile */
-    width: auto; /* Asigură-te că lățimile imaginilor se ajustează automat pentru a păstra proporțiile */
-    max-height: 110px; /* Setează o înălțime maximă pentru imaginile tale pentru a controla dimensiunea lor */
-    margin-right: 20px; /* Adaugă un spațiu între imaginile pentru a le separa */
-}
-
-.visa{
-    width: 120px; 
-}
-
-.nav_links {
-    margin-top: 100px; 
-    margin-right: 200px;
-}
-
-.nav_links ul {
-    display: flex;
-    list-style: none;
-    margin: 20;
-    padding: 0;
-}
-
-.nav_links li {
-    margin-right: 20px;
-}
-
-.nav_links li a {
-    color: #6597D6;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.nav_links li a:hover {
-    color: #0088a9;
-}
-
-.search-container {
-    position: relative;
-}
-
-.search-field {
-    width: 300px; /* Lățimea dorită pentru câmpul de căutare */
-    height: 40px; /* Înălțimea dorită pentru câmpul de căutare */
-    padding-right: 40px; /* Asigură suficient spațiu pentru iconița de căutare */
-    border: 1px solid #ccc; /* Stilurile pentru bordură */
-    border-radius: 20px; /* Rotunjirea colțurilor câmpului de căutare */
-}
-
-.search-button {
-    position: absolute;
+    position: fixed;
+    width: 100%;
     top: 0;
     right: 0;
-    width: 40px; /* Lățimea iconiței de căutare */
-    height: 40px; /* Înălțimea iconiței de căutare */
-    background-color: transparent; /* Asigură culoarea de fundal transparentă */
-    border: none; /* Elimină orice bordură */
-    cursor: pointer; /* Transformă cursorul în mână la hover */
+    height: 150px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color:  #1d1e1f; /* Adaugă culoarea neagră */
 }
 
-.search-button i {
-    font-size: 20px; /* Dimensiunea iconiței de căutare */
-    color: #666; /* Culorea iconiței de căutare */
+.logo img {
+    width: 300px;
+
 }
+
+.navmenu{
+    display: flex;
+}
+
+.navmenu a{
+    color: #5383d3;
+    font-size: 16px;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover{
+    color: #ddd;
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i{
+    margin-right: 20px;
+    color: #5383d3;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover{
+    transform: scale(1,1);
+    color: #ddd;
+}
+
+
+#menu-icon{
+    font-size: 20px;
+    color: white;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+section{
+    padding: 5px 10%;
+}
+
 
 /* Restul stilurilor tale */
 
 /* Stiluri pentru dropdown */
 .dropdown {
     position: absolute;
-    top: 120px; 
-    left: -220px; /* poziționarea elementului la 50px distanță de partea stângă a paginii */
+    top: 105px; 
+    left: -250px; /* poziționarea elementului la 50px distanță de partea stângă a paginii */
 }
 
 /* Dropdown Button */
@@ -155,13 +108,14 @@ header{
     border: none;
   }
 
-  .dropbtn .fa-bars-icon {
-    margin-right: 5px;
+.dropbtn .fas.fa-bars {
+    /* Stiluri pentru iconița de meniu */
+    margin-right: 5px; /* Adaugă un spațiu mic între iconiță și text */
 }
 
 
 .dropbtn i {
-    margin-right: 5px; /* Adaugă un spațiu mic între simbol și text */
+    margin-right: 100px; /* Adaugă un spațiu mic între simbol și text */
 }
   
   /* The container <div> - needed to position the dropdown content */
@@ -199,7 +153,27 @@ header{
   .dropdown:hover .dropbtn {color: #6597D6;background-color: rgba(0,0,0,0.2);}
 
   
+main {
+    display: flex;
+    flex-grow: 1; /* Permite elementului main să crească și să ocupe spațiul disponibil */
+    padding: 20px; 
+}
 
+aside {
+    width: 200px; /* Ajustează dimensiunea dorită pentru bara laterală */
+    background-color: #f2f2f2; /* Adaugă o culoare de fundal, dacă dorești */
+}
+
+.Cont1, .Cont2 {
+    display: block;
+    margin-top: 400px;
+    margin-bottom: 20px; /* Adaugă un spațiu între imaginile Cont1 și Cont2 */
+}
+
+.Cont1 img, .Cont2 img {
+    width: 100%; /* Asigură-te că imaginile se extind pe întreaga lățime a containerului */
+    display: block; /* Elimină spațiul rezervat pentru aliniere */
+}
 
 button{
     padding: 9px 25px;

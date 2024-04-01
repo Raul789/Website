@@ -16,6 +16,30 @@ footer{
 	margin-top: 60px;
 	margin-left: -10px;
 }
+
+.footer-left {
+    display: flex; /* Utilizează flexbox pentru a alinia imaginile într-un container flexibil */
+    align-items: center; /* Aliniază imaginile pe axa verticală (în cazul în care au înălțimi diferite) */
+}
+
+.logomini, .colab {
+    display: inline-block; /* Le face să se afișeze una lângă alta */
+    vertical-align: middle; /* Le aliniază vertical în cadrul containerului lor */
+}
+
+.logomini {
+    max-width: 100px; /* Setează o lățime maximă pentru logo-ul "logomini" */
+    margin-right: 20px; /* Adaugă un spațiu între logo-uri */
+}
+
+.colab {
+    max-width: 350px; /* Setează o lățime maximă pentru logo-ul "colab" */
+}
+
+.visa{
+    width: 120px; 
+}
+
  
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,

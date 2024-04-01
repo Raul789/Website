@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/fonts.css">
@@ -11,40 +13,39 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="/Users/macbook/Desktop/SEM2/Web/Website/Website/images/Rectangle.jpeg" alt="logo">
+        <a href="#" class="logo"><img src="/Users/macbook/Desktop/SEM2/Web/Website/Website/images/Rectangle.jpeg" alt="logo" /></a>
         <div class="dropdown">
-            <button class="dropbtn"><i class="fa fa-bars fa-bars-icon"></i> Categorii</button>
+            <button class="dropbtn"><i class="fas fa-bars"></i> CATEGORII <i class="bx bx-caret-down"></i></button>
             <div class="dropdown-content">
                 <a href="#">LICENTA WINDOWS</a>
                 <a href="#">LICENTA OFFICE</a>
                 <a href="#">LICENTA ADOBE</a>
+                <a href="#">LICENTA AUTODESK</a>
                 <a href="#">LICENTA SERVER</a>
                 <a href="#">LICENTA SQL SERVER</a>
-                <a href="#">LICENTA ANTIVIRUS</a>
                 <a href="#">ALTE LICENTE</a>
             </div>
         </div>
-        <div class="search-container">
-            <input type="text" placeholder="  CAUTĂ PRODUSE..." name="search" class="search-field">
-            <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+        <ul class="navmenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Page</a></li>
+            <li><a href="#">Docs</a></li>
+        </ul>
+        <div class="nav-icon">
+            <a href="#"><i class="bx bx-search"></i></a>
+            <a href="#"><i class="bx bx-user"></i></a>
+            <a href="#"><i class="bx bx-cart"></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
         </div>
-        <nav class="nav_links">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Products.html">Products</a></li>
-                <li><a href="Contacts.html">Contact</a></li>
-                <li><a href="AboutUs.html">About</a></li>
-            </ul>
-        </nav>
-        <a class="cta" href="Login.html">
-            <button class="user-icon"><i class="fa fa-user"></i></button>
-        </a>
-        <a class="cta" href="Cart.html">
-            <button class="cart-icon"><i class="fa fa-shopping-cart"></i></button>
-        </a>
     </header>
-    
-    
+    <main>
+        <aside>
+            <a href="#" class="Cont1"><img src="/Users/macbook/Desktop/SEM2/Web/Website/Website/images/Cont1.png" alt="logo" /></a>
+            <a href="#" class="Cont2"><img src="/Users/macbook/Desktop/SEM2/Web/Website/Website/images/Cont2.png" alt="logo" /></a>
+        </aside>
+    </main>
         <footer class="footer-distributed">
             <div class="footer-left">
                 <img class = "logomini" src="/Users/macbook/Desktop/SEM2/Web/Website/Website/images/Square.png" alt = "logomini" >

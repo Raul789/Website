@@ -46,16 +46,25 @@ header{
 
 .logo img {
     width: 350px;
+    color: #5383d3; /* Culoarea iconurilor */
+    font-size: 20px; /* Dimensiunea iconurilor */
+    margin-left: 10px; /* Spațiu între iconuri */
+}
 
+h1 {
+    color: #5383d3;
+    font-size: 34px;
+    margin-left: 20px;
 }
 
 .navmenu{
     display: flex;
+
 }
 
 .navmenu a{
     color: #5383d3;
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px 20px;
     font-weight: 400;
     transition: all .42s ease;
@@ -65,24 +74,9 @@ header{
     color: #ddd;
 }
 
-.nav-icon{
-    display: flex;
-    align-items: center;
+.nav-icon-li {
+    margin-left: 10px; /* Ajustați spațiul după necesități */
 }
-
-.nav-icon i{
-    margin-right: 20px;
-    color: #5383d3;
-    font-size: 25px;
-    font-weight: 400;
-    transition: all .42s ease;
-}
-
-.nav-icon i:hover{
-    transform: scale(1,1);
-    color: #ddd;
-}
-
 
 #menu-icon{
     font-size: 20px;

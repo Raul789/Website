@@ -1,22 +1,7 @@
 .products {
-    display: grid; /* Folosește grid layout */
+    display: grid;
     grid-template-columns: repeat(2, 1fr); /* Două coloane de aceeași lățime */
     gap: 2rem; /* Adaugă un spațiu între elemente */
-}
-
-.row{
-    position: fixed;
-    transition: all .40s;
-}
-
-.row img{
-    width: 50%;
-    height: 50%;
-    transition: all .40s;
-}
-
-.row img:hover{
-    transform: scale(0.9);
 }
 
 .product {
@@ -37,16 +22,16 @@
 }
 
 .product button {
-    padding: 10px 20px; /* Ajustează dimensiunile butonului */
-    background-color: #5383d3; /* Schimbă culoarea butonului */
+    padding: 10px 20px;
+    background-color: #6597D6; /* Schimbă culoarea de fundal a butonului */
     color: #fff; /* Schimbă culoarea textului butonului */
     border: none;
-    border-radius: 50px;
+    border-radius: 5px; /* Rotunjirea marginilor */
     cursor: pointer;
     transition: all 0.3s ease;
+    font-size: 16px; /* Mărimea fontului */
 }
 
 .product button:hover {
-    background-color: #5383d3; /* Schimbă culoarea butonului la survol */
+    background-color: #5383d3; /* Schimbă culoarea butonului la hover */
 }
-

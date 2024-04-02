@@ -1,0 +1,95 @@
+/* Stilizare pentru containerul detalii utilizator */
+.user-details {
+    background-color: #1d1e1f; /* Culoarea de fundal a containerului */
+    padding: 20px; /* Spațiul de padding în interiorul containerului */
+    border-radius: 10px; /* Rotunjirea marginilor containerului */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Umbră pentru efect vizual */
+    max-width: 600px; /* Lățimea maximă a containerului */
+    margin: 0 auto; /* Centrarea containerului pe pagină */
+    color: #5383d3; /* Culoarea textului */
+}
+
+.orders-history {
+    background-color: #1d1e1f; /* Culoarea de fundal a containerului */
+    padding: 20px; /* Spațiul de padding în interiorul containerului */
+    border-radius: 10px; /* Rotunjirea marginilor containerului */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Umbră pentru efect vizual */
+    max-width: 600px; /* Lățimea maximă a containerului */
+    margin: 0 auto; /* Centrarea containerului pe pagină */
+    color: #5383d3; /* Culoarea textului */
+}
+
+.order-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.order {
+    margin-bottom: 10px;
+}
+
+.order h3 {
+    margin-top: 0;
+}
+
+.order ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.order ul li {
+    margin-bottom: 5px;
+}
+
+.order p {
+    margin-top: 0;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+}
+
+.product-info img {
+    width: 100px; /* Ajustați dimensiunile imaginii conform preferințelor dvs. */
+    height: auto;
+    margin-right: 10px;
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+.product-details h4,
+.product-details p {
+    margin: 0;
+    color: white; /* Culoarea textului */
+}
+
+
+.options {
+    background-color: #1d1e1f; /* Culoarea de fundal a containerului */
+    padding: 20px; /* Spațiul de padding în interiorul containerului */
+    border-radius: 10px; /* Rotunjirea marginilor containerului */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Umbră pentru efect vizual */
+    max-width: 600px; /* Lățimea maximă a containerului */
+    margin: 0 auto; /* Centrarea containerului pe pagină */
+    color: #5383d3; /* Culoarea textului */
+}
+
+/* Stilizare pentru caseta de mesaj */
+.message-box {
+    background-color: #fff; /* Culoarea de fundal a casetei de mesaj */
+    border: 1px solid #ddd; /* Borderul casetei de mesaj */
+    padding: 10px; /* Spațiul de padding în interiorul casetei de mesaj */
+    margin-top: 20px; /* Spațiul de deasupra casetei de mesaj */
+}
+
+/* Stilizare pentru textul mesajului */
+.message {
+    color: #5383d3; /* Culoarea textului mesajului */
+    font-style: Bold; /* Stilul italic pentru textul mesajului */
+}
+

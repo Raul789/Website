@@ -97,7 +97,7 @@ section{
 .dropdown {
     position: absolute;
     top: 105px; 
-    left: -270px; /* poziționarea elementului la 50px distanță de partea stângă a paginii */
+    left: -450px; /* poziționarea elementului la 50px distanță de partea stângă a paginii */
 }
 
 /* Dropdown Button */
@@ -184,13 +184,13 @@ aside {
 }
 
 .Cont1 img, .Cont2 img {
-    width: 130%; /* Asigură-te că imaginile se extind pe întreaga lățime a containerului */
+    width: 150%; /* Asigură-te că imaginile se extind pe întreaga lățime a containerului */
     display: block; /* Elimină spațiul rezervat pentru aliniere */
     border-radius: 10px; /* Adaugă o margine rotunjită de 10px */
 }
 
 .Cont3 img{
-    width: 130%;
+    width: 200%;
     display: block;
     border-radius: 5px;
 }
@@ -250,6 +250,32 @@ button:hover{
     transition: 0.02s ease;
 }
 
+
+#banner1{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/Users/macbook/Desktop/SEM2/Web/Website/Website/images/jb1.jpeg);
+}
+
+#banner1 span{
+    color: red;
+}
+
+#banner1 buttn1{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color:#000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+}
 
 #product1 .pro:hover{
     box-shadow: 20px 20px 30px rgba(0,0,0,0.08);

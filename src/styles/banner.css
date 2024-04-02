@@ -1,0 +1,38 @@
+.banner {
+    position: fixed;
+    bottom: 20px; /* Ajustăm distanța de la marginea de jos a paginii */
+    right: 60px;
+    width: 120%; /* Mărim lățimea bannerului */
+    max-width: 3000px; /* Setăm o lățime maximă */
+    height: 3000px; /* Înlăturăm înălțimea fixă pentru a permite bannerului să-și ajusteze dimensiunile în funcție de conținut */
+    overflow: hidden; /* Ascundem părțile imaginei care ies din container */
+    border: 10px solid #ccc; /* Adăugăm un contur subtil */
+    border-radius: 20px; /* Rotunjim marginile */
+    text-align: center; /* Aliniem imaginea în centrul containerului */
+    z-index: 1000; /* Asigurăm că bannerul este deasupra altor elemente */
+}
+
+.banner img {
+    width: 250%; /* Facem imaginea să umple complet lățimea containerului */
+    height: auto; /* Asigurăm proporțiile corecte ale imaginii */
+    display: block;
+    position: relative; /* Setăm poziția relativă pentru a poziționa butoanele în interiorul imaginii */
+    transition: opacity 0.5s ease;
+}
+
+.banner img.hidden {
+    opacity: 0; 
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

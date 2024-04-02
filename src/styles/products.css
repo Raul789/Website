@@ -1,0 +1,52 @@
+.products {
+    display: grid; /* Folosește grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Două coloane de aceeași lățime */
+    gap: 2rem; /* Adaugă un spațiu între elemente */
+}
+
+.row{
+    position: fixed;
+    transition: all .40s;
+}
+
+.row img{
+    width: 50%;
+    height: 50%;
+    transition: all .40s;
+}
+
+.row img:hover{
+    transform: scale(0.9);
+}
+
+.product {
+    padding: 20px; /* Adaugă spațiu în jurul produselor */
+    background-color: #fff; /* Adaugă un fundal alb pentru produse */
+    border-radius: 10px; /* Adaugă colțuri rotunjite pentru produse */
+    text-align: center; /* Aliniază textul în centru */
+}
+
+.product h3 {
+    font-size: 18px; /* Mărește dimensiunea fontului pentru titlu */
+    margin-bottom: 10px; /* Adaugă spațiu între titlu și preț */
+}
+
+.product p {
+    font-size: 16px; /* Mărește dimensiunea fontului pentru preț */
+    margin-bottom: 10px; /* Adaugă spațiu între preț și buton */
+}
+
+.product button {
+    padding: 10px 20px; /* Ajustează dimensiunile butonului */
+    background-color: #5383d3; /* Schimbă culoarea butonului */
+    color: #fff; /* Schimbă culoarea textului butonului */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #5383d3; /* Schimbă culoarea butonului la survol */
+}
+

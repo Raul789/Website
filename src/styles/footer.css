@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-footer{
-	position: fixed;
-	bottom: 0;
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Adaugă o culoare de fundal pentru footer */
+    color: #fff; /* Ajustează culoarea textului pentru vizibilitate */
+    padding: 20px; /* Adaugă spațiu între marginea footer-ului și conținut */
 }
+
+
 .footer-distributed{
     font-family: "Montserrat", sans-serif;
 	background-color: #292c2f;

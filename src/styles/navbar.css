@@ -24,12 +24,18 @@ li, a, button{
     text-decoration: none;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
 header{
-    position: fixed;
+    position: relative;
     width: 100%;
     top: 0;
     right: 0;
-    height: 150px;
+    height: 160px;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -39,7 +45,7 @@ header{
 }
 
 .logo img {
-    width: 300px;
+    width: 350px;
 
 }
 
@@ -96,7 +102,7 @@ section{
 .dropdown {
     position: absolute;
     top: 105px; 
-    left: -250px; /* poziționarea elementului la 50px distanță de partea stângă a paginii */
+    left: -270px; /* poziționarea elementului la 50px distanță de partea stângă a paginii */
 }
 
 /* Dropdown Button */
@@ -105,7 +111,7 @@ section{
     color: #fff;
     padding: 16px;
     font-size: 16px;
-    border: none;
+    border: 10px;
   }
 
 .dropbtn .fas.fa-bars {
@@ -115,7 +121,7 @@ section{
 
 
 .dropbtn i {
-    margin-right: 100px; /* Adaugă un spațiu mic între simbol și text */
+    margin-right: 10px; /* Adaugă un spațiu mic între simbol și text */
 }
   
   /* The container <div> - needed to position the dropdown content */
@@ -164,15 +170,52 @@ aside {
     background-color: #f2f2f2; /* Adaugă o culoare de fundal, dacă dorești */
 }
 
-.Cont1, .Cont2 {
+.Cont1{
     display: block;
-    margin-top: 400px;
+    margin-top: 0px;
+    margin-bottom: 20px; 
+}
+
+.Cont2 {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 20px; /* Adaugă un spațiu între imaginile Cont1 și Cont2 */
+}
+
+.Cont3 {
+    display: block;
+    margin-top: 0px;
     margin-bottom: 20px; /* Adaugă un spațiu între imaginile Cont1 și Cont2 */
 }
 
 .Cont1 img, .Cont2 img {
-    width: 100%; /* Asigură-te că imaginile se extind pe întreaga lățime a containerului */
+    width: 130%; /* Asigură-te că imaginile se extind pe întreaga lățime a containerului */
     display: block; /* Elimină spațiul rezervat pentru aliniere */
+    border-radius: 10px; /* Adaugă o margine rotunjită de 10px */
+}
+
+.Cont3 img{
+    width: 130%;
+    display: block;
+    border-radius: 5px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Ajustează distanța între antet și banner */
+    overflow: hidden; /* Asigură că imaginile care ies din container nu sunt vizibile */
+}
+
+.banner img {
+    width: 40%; /* Face ca imaginile să umple complet lățimea containerului */
+    margin: 0 10px; /* Adaugă un spațiu între imaginile din banner */
+    transition: transform 0.5s ease; /* Adaugă o tranziție ușoară pentru derularea imaginilor */
+}
+
+.banner img:hover {
+    transform: scale(1.1); /* Mărește imaginea la survol */
 }
 
 button{

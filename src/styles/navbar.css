@@ -97,7 +97,7 @@ section{
 .dropdown {
     position: absolute;
     top: 105px; 
-    left: -450px; /* poziționarea elementului la 50px distanță de partea stângă a paginii */
+    left: -300px; /* poziționarea elementului la 50px distanță de partea stângă a paginii */
 }
 
 /* Dropdown Button */

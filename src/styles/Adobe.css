@@ -1,0 +1,4 @@
+.pro img {
+    width: 200px; /* Setează lățimea imaginii */
+    height: 260px; /* Menține raportul de aspect al imaginii */
+}

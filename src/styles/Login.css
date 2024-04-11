@@ -1,25 +1,31 @@
 .wrapper {
-  position: relative;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-box-login {
   width: 400px;
   height: 440px;
   background-color: transparent;
-  border: 2px solid rgba(255,255,255,.5);
+  border: 2px solid rgba(255, 255, 255, .5);
   border-radius: 20px;
   backdrop-filter: blur(20px);
-  box-shadow: 0 0 30px rgba(0,0,0,.5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 600px;
 }
 
-.form-box-login h2{
+.form-box-login h2 {
   font-size: 2em;
   color: #5383d3;
   text-align: center;
 }
 
-.input-box{
+.input-box {
   position: relative;
   width: 100%;
   height: 50px;
@@ -27,7 +33,7 @@
   margin: 30px 0;
 }
 
-.input-box label{
+.input-box label {
   position: absolute;
   top: 50%;
   left: 5px;
@@ -40,9 +46,8 @@
 }
 
 .input-box input:focus~label,
-.input-box input:valid~label{
+.input-box input:valid~label {
   top: -5px;
-
 }
 
 .input-box input {
@@ -57,15 +62,15 @@
   padding: 0 35px 0 5px;
 }
 
-.input-box .icon{
+.input-box .icon {
   position: absolute;
   right: 8px;
   font-size: 1.2em;
-  color:#162938;
+  color: #162938;
   line-height: 57px;
 }
 
-.remember-forgot{
+.remember-forgot {
   font-size: .9em;
   color: #162938;
   font-weight: 500;
@@ -74,10 +79,9 @@
   justify-content: space-between;
 }
 
-.remember-forgot label input{
+.remember-forgot label input {
   accent-color: #162938;
   margin-right: 3px;
-
 }
 
 .remember-forgot a {
@@ -85,12 +89,11 @@
   text-decoration: none;
 }
 
-.remember-forgot a:hover{
+.remember-forgot a:hover {
   text-decoration: underline;
-
 }
 
-.btn{
+.btn {
   width: 100%;
   height: 45px;
   background: #162938;
@@ -99,12 +102,11 @@
   border-radius: 6px;
   cursor: pointer;
   font-size: 1em;
-  color:#fff;
+  color: #fff;
   font-weight: 500;
-
 }
 
-.login-register{
+.login-register {
   font-size: .9em;
   color: #162938;
   text-align: center;
@@ -112,17 +114,15 @@
   margin: 25px 0 10px;
 }
 
-.login-register p a{
+.login-register p a {
   color: #162938;
   text-decoration: none;
   font-weight: 600;
-
 }
 
-.login-register p a:hover{
+.login-register p a:hover {
   text-decoration: underline;
 }
-
 
 .wrapper h2 {
   font-size: 24px; /* Increase font size for headings */
@@ -142,3 +142,16 @@
   padding: 10px 20px; /* Increase padding for buttons */
 }
 
+.wrapper {
+  margin-bottom: 100px; /* Adaugă un spațiu la sfârșitul conținutului pentru a face loc pentru footer */
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #162938;
+  color: #fff;
+  text-align: center;
+}

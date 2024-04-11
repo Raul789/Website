@@ -1,53 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
-        <link rel="stylesheet" href="styles/navbar.css">
-        <link rel="stylesheet" href="styles/footer.css">
-        <link rel="stylesheet" href="styles/fonts.css">
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet" href="styles/Login.css">
-        <link rel="stylesheet" href="styles/myaccount.css">
-    </head>
-    <body>
-        <header>
-            <a href="Menu.html" class="logo"><img src="/Users/macbook/Desktop/SEM2/Web/Website/Website/images/Rectangle.jpeg" alt="logo" /></a>       
-            <h1>Login</h1>
-        </header>
-        <div class="wrapper">
-           <div class="form-box-login">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/myaccount.css">
+    <link rel="stylesheet" href="styles/Login.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <a href="Menu.html" class="logo"><img src="/Users/macbook/Desktop/SEM2/Web/Website/Website/images/Rectangle.jpeg" alt="logo" /></a>       
+        <h1>Login to your account</h1>
+    </header>
+    <div class="wrapper">
+        <div class="form-box-login" id = "signIn">
             <h2>Login</h2>
-            <form action="#">
+            <form action="connect.php" method="POST"> <!-- Actualizează action și adaugă atributul method -->
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                        <input type="email" required>
-                            <label>Email</label>
+                    <input type="email" name="email" required> <!-- Adaugă un atribut name pentru a putea identifica valorile în scriptul de conectare -->
+                    <label>Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                        <input type="password" required>
-                            <label>Password</label>
+                    <input type="password" name="password" required> <!-- Adaugă un atribut name pentru a putea identifica valorile în scriptul de conectare -->
+                    <label>Password</label>
                 </div>
                 <div class="remember-forgot">
                     <label>
-                        <input type="checkbox"> Remember me</label>
-                        <a href="#">Forgot password?</a>
+                        <input type="checkbox" name="remember"> Remember me <!-- Adaugă un atribut name pentru a putea identifica valoarea în scriptul de conectare -->
+                    </label>
+                    <a href="#">Forgot password?</a>
                 </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="login-register"></div>
-                <p>Don't have an account?<a href="Register.html" class="register-link">Register</a></p>
+                <button type="submit" class="btn" id = "loginButton">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="Register.html" class="register-link" id = "registerLink">Register</a></p>
+                </div>
             </form>
-           </div>
         </div>
-        <script src="script.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    </body>
-    <main>
-
-    </main>
+    </div>
+</body>
 </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/myaccount.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <a href="Menu.html" class="logo"><img src="/Users/macbook/Desktop/SEM2/Web/Website/Website/images/Rectangle.jpeg" alt="logo" /></a>       
+        <h1>Contact us!</h1>
+    </header>
+    <div class="wrapper">
+        <div class="form-box-contact" name = "singIn" id = "signIn">
+            <h1>Formularul de Contact</h1>
+            <h3>Răspundem în timp rezonabil oricărei solicitări.</h3>
+            <form method="post" action = "login1.php"> <!-- Actualizează action și adaugă atributul method -->
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="nume" name="nume" required> <!-- Adaugă un atribut name pentru a putea identifica valorile în scriptul de conectare -->
+                    <label>Nume *</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="prenume" name="prenume" required> <!-- Adaugă un atribut name pentru a putea identifica valorile în scriptul de conectare -->
+                    <label>Prenume *</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="email" name="email" required> <!-- Adaugă un atribut name pentru a putea identifica valorile în scriptul de conectare -->
+                    <label>Adresa de e-Mmail *</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="subject" name="subject" required> <!-- Adaugă un atribut name pentru a putea identifica valorile în scriptul de conectare -->
+                    <label>Subiect *</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="message" name="message" required> <!-- Adaugă un atribut name pentru a putea identifica valorile în scriptul de conectare -->
+                    <label>Mesaj *</label>
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox" name="gdpr"> Prin trimitera formularului declari că ești de acord cu Termenii și condițiile și cu noile reglementări GDPR. <!-- Adaugă un atribut name pentru a putea identifica valoarea în scriptul de conectare -->
+                    </label>
+                </div>
+                <button type="submit" class="btn" id = "trimite">Trimite mesaj</button>
+                <div class="login-register">
+                    <p>Termeni si conditii <a href="termeni.html" class="register-link" id = "registerLink">Citeste</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

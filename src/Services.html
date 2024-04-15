@@ -1,9 +1,16 @@
+<?php
+session_start();
+include("connect.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="/Users/macbook/Desktop/SEM2/Web/Website/Website/images/Mini.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
     <link rel="stylesheet" href="styles/navbar.css">
@@ -13,67 +20,20 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo"><img src="/Users/macbook/Desktop/SEM2/Web/Website/Website/images/Rectangle.jpeg" alt="logo" /></a>
-        <div class="dropdown">
-            <button class="dropbtn"><i class="fas fa-bars"></i> CATEGORII <i class="bx bx-caret-down"></i></button>
-            <div class="dropdown-content">
-                <a href="#">LICENTA WINDOWS</a>
-                <a href="#">LICENTA OFFICE</a>
-                <a href="#">LICENTA ADOBE</a>
-                <a href="#">LICENTA AUTODESK</a>
-                <a href="#">LICENTA SERVER</a>
-                <a href="#">LICENTA SQL SERVER</a>
-                <a href="#">ALTE LICENTE</a>
-            </div>
-        </div>
+        <a href="Menu.html" class="logo"><img src="/Users/macbook/Desktop/SEM2/Web/Website/Website/images/Rectangle.jpeg" alt="logo" /></a>
         <ul class="navmenu">
             <li><a href="Menu.html">Home</a></li>
-            <li><a href="#">Shop</a></li>
+            <li><a href="Shop.html">Shop</a></li>
             <li><a href="Services.html">Services</a></li>
-            <li><a href="#">Page</a></li>
-            <li><a href="#">Docs</a></li>
-            <li class="nav-icon-li"><a href="DoctorLogin.html" class="nav-icon"><i class="fas fa-user"></i></a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="nav-icon-li"><a href="MyAccount.html" class="nav-icon"><i class="fas fa-user"></i></a></li>
             <li class="nav-icon-li"><a href="ApplicationForm.html" class="nav-icon"><i class="fas fa-shopping-cart"></i></a></li>
         </ul>        
         
     </header>
     <main>
         
-        <div class="products">
-                <div class="product">
-                    <img src="/Users/macbook/Desktop/SEM2/Web/Website/Website/images/Licente Windows/Windows 10 Home.png" alt="">
-                    <div class="price">
-                        <h3>Windows 10 Home Licenta Electronica</h3>
-                        <p>Pret: 60,00 lei</p>
-                        <button>Buy Now</button>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="/Users/macbook/Desktop/SEM2/Web/Website/Website/images/Licente Windows/Windows 10 Pro.png" alt="">
-                    <div class="price">
-                        <h3>Windows 10 Pro Licenta Electronica</h3>
-                        <p>Pret: 60,00 lei</p>
-                        <button>Buy Now</button>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="/Users/macbook/Desktop/SEM2/Web/Website/Website/images/Licente Windows/Windows 11 Home.png" alt="">
-                    <div class="price">
-                        <h3>Windows 11 Home Licenta Electronica</h3>
-                        <p>Pret: 60,00 lei</p>
-                        <button>Buy Now</button>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="/Users/macbook/Desktop/SEM2/Web/Website/Website/images/Licente Windows/Windows 11 Pro.png" alt="">
-                    <div class="price">
-                        <h3>Windows 11 Pro Licenta Electronica</h3>
-                        <p>Pret: 60,00 lei</p>
-                        <button>Buy Now</button>
-                    </div>
-                </div>
-        </div>
-        <!-- Adaugă mai multe produse aici -->
     </main>
         <footer class="footer-distributed">
             <div class="footer-left">

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+@font-face {
+    font-family: 'Hanley Pro Sans White Extra';
+    src: url('camin_catre_font/HanleyProSansWhiteExtra.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Hanley Pro Sans White Extra', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #2c2c2c;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 0;
+    height: 160px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color:  #1d1e1f; /* Adaugă culoarea neagră */
+}
+
+.logo img {
+    width: 350px;
+    color: #5383d3; /* Culoarea iconurilor */
+    font-size: 20px; /* Dimensiunea iconurilor */
+    margin-left: 10px; /* Spațiu între iconuri */
+}
+
+h1 {
+    color: #5383d3;
+    font-size: 34px;
+    margin-left: 20px;
+}
+
+.navmenu{
+    display: flex;
+
+}
+
+.navmenu a{
+    color: #5383d3;
+    font-size: 18px;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.navmenu li a:hover{
+    color: #ddd;
+    transition: 0.3s ease;
+}
+
+.nav-icon-li {
+    margin-left: 10px; /* Ajustați spațiul după necesități */
+}
+
+#menu-icon{
+    font-size: 20px;
+    color: white;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+body {
+
+
+}
+main {
+
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h2 {
+    text-align: center;
+    margin-top: 20px; /* Adăugăm un spațiu între h1 și h2 */
+}
+section {
+    margin-bottom: 20px;
+}
+
+p{
+    margin-top: 20px;
+}

@@ -1,3 +1,9 @@
+<?php
+session_start();
+include("connect.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,13 +32,21 @@
                 <a href="Sql.html">LICENTA SQL SERVER</a>
                 <a href="Antivirus.html">LICENTA ANTIVIRUS</a>
                 <a href="Altele.html">ALTE APLICATII</a>
+                <?php if(isset($_SESSION['email'])){
+                    $email=$_SESSION['email'];
+                    $query=mysqli_query($conn,"SELECT users.* FROM 'Utilizatori' WHERE users.email='$email'") 
+                    WHILE ($row=mysqli_fetch_array($query)){
+                        echo $row['nume'].''.$row['email'];
+                    }
+                }
+                ?>
             </div>
         </div>
         <ul class="navmenu">
             <li><a href="Menu.html">Home</a></li>
             <li><a href="Shop.html">Shop</a></li>
             <li><a href="Services.html">Services</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="About.html">About</a></li>
             <li><a href="#">Contact</a></li>
             <li class="nav-icon-li"><a href="MyAccount.html" class="nav-icon"><i class="fas fa-user"></i></a></li>
             <li class="nav-icon-li"><a href="ApplicationForm.html" class="nav-icon"><i class="fas fa-shopping-cart"></i></a></li>
